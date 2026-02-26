@@ -97,4 +97,29 @@ This will produce a bar plot where each chromosome is a bar whose
 height reflects its total length and whose color reflects mean GC
 content.
 
+## Example 2: GC content by genomic location (boxplot)
+
+The script `gc_content_boxplot.R` compares GC content distributions
+across genomic locations (e.g., exons, introns, intergenic regions)
+and visualizes them as boxplots.
+
+### Input format
+
+`gc_content_locations.tsv` should be a tab-delimited file with at least:
+
+- `location` – category label (e.g., `exon`, `intron`, `intergenic`,
+  `SDR`, `PAR`).  
+- `pct_gc` – GC percentage for each region/window.
+
+Example:
+
+```text
+location    pct_gc
+exon        47.3
+exon        49.1
+intron      38.5
+intergenic  36.2
+...
+
+
 
